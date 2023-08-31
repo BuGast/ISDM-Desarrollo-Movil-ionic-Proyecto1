@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GAME STORE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <swiper-container class="carousel"
+
+  (slidechange)="swiperSlideChanged($event)"
+    [loop]="true"
+    [pagination]="true">
+
+    <swiper-slide><img class="img-carousel" src="assets/img/1.jpg" alt="1"></swiper-slide>
+    <swiper-slide><img class="img-carousel" src="assets/img/2.jpg" alt="2"></swiper-slide>
+    <swiper-slide><img class="img-carousel" src="assets/img/3.jpg" alt="3"></swiper-slide>
+
+  </swiper-container>
+
+  <ion-container class="art-destacado">
+    <p>ARTICULOS DESTACADOS</p>
+  </ion-container>
+
+</ion-content>
