@@ -4,11 +4,19 @@ import { NewCompComponent } from './new-comp/new-comp.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
   },
   {
     path:'new-comp',
     component: NewCompComponent,
+  },
+  {
+    path:'welcome',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path:'formulario',
+    loadChildren: () => import('./formulario/formulario.module').then( m => m.FormularioPageModule)
   }
 ];
 @NgModule({

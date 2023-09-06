@@ -1,0 +1,23 @@
+ion-content {
+    ion-header {
+        ion-toolbar {
+            ion-title {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+    div {
+        margin: auto;
+        width: 95%;
+        height: 30%;
+        border: 7px solid white;
+        ion-list {
+            ion-item {
+                ion-input {
+                    color: white;
+                }
+            }
+        }
+    }
+}
