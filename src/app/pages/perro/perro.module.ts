@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, MenuController } from '@ionic/angular';
 
 import { PerroPageRoutingModule } from './perro-routing.module';
 
@@ -18,6 +18,7 @@ import { HeaderComponent } from 'src/app/components/header/header.component';
     PerroPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [PerroPage]
+  declarations: [PerroPage],
+  providers: [MenuController]
 })
 export class PerroPageModule {}

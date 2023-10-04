@@ -1,12 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>piedra</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header [titulo] = "'pagina piedra'" [color]="'black'"></app-header> 
 <ion-content [fullscreen]="true">
   <app-header></app-header> 
   <div>
-    <ion-button routerLink="/inicio">SALIR</ion-button>
+    <ion-back-button text="SALIR" defaultHref="/inicio"></ion-back-button>
   </div>
 </ion-content>

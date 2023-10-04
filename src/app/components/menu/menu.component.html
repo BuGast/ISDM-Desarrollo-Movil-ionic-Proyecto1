@@ -1,3 +1,19 @@
-<p>
-  menu works!
-</p>
+<ion-menu side="start" contentId="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+        <ion-item [routerDirection]="'forward'" [routerLink]="p.url" lines="none">
+          <ion-icon slot="start" [name]="p.icon"></ion-icon>
+          <ion-label>
+            {{ p.title }}
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
