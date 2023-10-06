@@ -18,7 +18,6 @@ import { HeaderComponent } from 'src/app/components/header/header.component';
     PerroPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [PerroPage],
-  providers: [MenuController]
+  declarations: [PerroPage]
 })
 export class PerroPageModule {}

@@ -1,19 +1,18 @@
-<ion-menu side="start" contentId="content">
-  <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Menú</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-        <ion-item [routerDirection]="'forward'" [routerLink]="p.url" lines="none">
-          <ion-icon slot="start" [name]="p.icon"></ion-icon>
-          <ion-label>
-            {{ p.title }}
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-    </ion-list>
-  </ion-content>
+<ion-menu side="end" menuId="menu" contentId="main">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Menu Principal</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item routerLink="/welcome">TIENDA GAMER</ion-item>
+            <p>EXTRAS</p>
+            <ion-item routerLink="/perro">perro</ion-item>
+            <ion-item routerLink="/armadura">armadura</ion-item>
+            <ion-item routerLink="/computadora">computadora</ion-item>
+            <ion-item routerLink="/piedra">piedra</ion-item>
+            <ion-item routerLink="/pizarron">pizarron</ion-item>
+        </ion-list>
+    </ion-content>
 </ion-menu>

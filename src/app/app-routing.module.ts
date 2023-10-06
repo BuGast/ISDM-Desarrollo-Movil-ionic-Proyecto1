@@ -41,10 +41,6 @@ const routes: Routes = [
   {
     path: 'computadora',
     loadChildren: () => import('./pages/computadora/computadora.module').then( m => m.ComputadoraPageModule)
-  },
-  {
-    path: 'inicio',
-    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
 ];
 @NgModule({

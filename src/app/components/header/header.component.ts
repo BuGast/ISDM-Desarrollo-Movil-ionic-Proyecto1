@@ -7,16 +7,13 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @Input() color: string | undefined;
+  @Input() color: string = '#283747';
   @Input() titulo: string | undefined;
   saludo = "buenas tardes"
   comision = " A"
 
-  constructor(private menu: MenuController) { }
-
-  toggleMenu() {
-    this.menu.toggle();
-  }
+  constructor() { }
+  
   ngOnInit() {}
 
   miEvento()
